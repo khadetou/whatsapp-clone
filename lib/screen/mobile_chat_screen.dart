@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui_clone/info.dart';
+import 'package:whatsapp_ui_clone/widgets/chat/chat_list.dart';
 
 class MobileChatScreen extends StatelessWidget {
   const MobileChatScreen({super.key});
@@ -32,6 +33,13 @@ class MobileChatScreen extends StatelessWidget {
               ),
             ),
           ]),
+      body: const Column(
+        children: [
+          Expanded(
+            child: ChatList(),
+          ),
+        ],
+      ),
     );
   }
 }
